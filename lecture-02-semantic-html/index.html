@@ -2,43 +2,150 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Osman Torunoğlu | Portfolio</title>
 </head>
+
 <body>
+  <!-- Accessibility: skip link -->
+  <a href="#main">Skip to content</a>
 
   <header>
-    <h1>Your Name</h1>
-    <p>Short description / role</p>
+    <h1>Osman Torunoğlu</h1>
+    <p>Lecturer & RDI Researcher • Kuopio, Finland • IoT / Edge AI / Web</p>
+
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#works">Portfolio / Works</a></li>
+        <li><a href="#interests">Areas of Interest</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
   <main id="main">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Write a short introduction.</p>
+    <section id="works" aria-labelledby="works-title">
+      <h2>Portfolio / Works</h2>
+      <p>
+        Selected examples of my work. This section includes media, links, and short descriptions.
+      </p>
+
+      <!-- Work item 1 -->
+      <article aria-labelledby="work-1-title">
+        <h3 id="work-1-title">Project 1: Stable Monitoring (Audio + Video)</h3>
+
+        <figure>
+          <img
+            src="https://via.placeholder.com/900x500.png?text=Project+Photo"
+            alt="A placeholder image representing a stable monitoring project."
+            width="900"
+            height="500"
+          />
+          <figcaption>
+            Prototype setup: microphones and cameras for horse stall monitoring (placeholder image).
+          </figcaption>
+        </figure>
+
+        <p>
+          A Raspberry Pi–based data collection setup for capturing audio and video for AI modeling.
+        </p>
+
+        <p>
+          Links:
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+          •
+          <a href="https://example.com" target="_blank" rel="noopener noreferrer">Project page</a>
+        </p>
+      </article>
+
+      <!-- Work item 2 -->
+      <article aria-labelledby="work-2-title">
+        <h3 id="work-2-title">Project 2: Short Demo Video</h3>
+
+        <figure>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+            title="Demo video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <figcaption>
+            Embedded video demo (replace with your own YouTube/Vimeo link).
+          </figcaption>
+        </figure>
+
+        <p>
+          This video demonstrates a simple feature or a short presentation about one of my projects.
+        </p>
+      </article>
+
+      <!-- Work item 3 -->
+      <article aria-labelledby="work-3-title">
+        <h3 id="work-3-title">Project 3: Portfolio Screenshots</h3>
+
+        <figure>
+          <img
+            src="https://via.placeholder.com/900x500.png?text=Screenshot+1"
+            alt="Placeholder screenshot of a web page."
+            width="900"
+            height="500"
+          />
+          <figcaption>Screenshot 1 (placeholder).</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://via.placeholder.com/900x500.png?text=Screenshot+2"
+            alt="Placeholder screenshot of a second web page."
+            width="900"
+            height="500"
+          />
+          <figcaption>Screenshot 2 (placeholder).</figcaption>
+        </figure>
+
+        <p>
+          Replace these placeholder images with screenshots or photos of your real work.
+        </p>
+      </article>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Projects will be added later.</p>
+    <section id="interests" aria-labelledby="interests-title">
+      <h2 id="interests-title">Areas of Interest</h2>
+      <p>Topics I’m currently learning and building with:</p>
+
+      <ul>
+        <li>Semantic HTML, accessibility, and web standards</li>
+        <li>CSS layout (Flexbox/Grid) and responsive design</li>
+        <li>JavaScript fundamentals and DOM manipulation</li>
+        <li>IoT systems and edge data collection</li>
+        <li>AI-assisted workflows (with critical review)</li>
+      </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email or links.</p>
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:your.name@example.com">your.name@example.com</a>
+      </p>
+      <p>
+        Preferred contact: LinkedIn message.
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Your Name</p>
-  </footer>
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">Website</a></li>
+    </ul>
 
+    <p>© 2026 Osman Torunoğlu</p>
+  </footer>
 </body>
 </html>
